@@ -6,6 +6,9 @@ const { convertAllController } = require("../utils/converter/controllerConverter
 const { convertAllRoutes } = require("../utils/converter/endPoint_converter/eachRoute");
 const { convertAllModels } = require("../utils/converter/model_converter/converter");
 const { configFileFile, getSetting, connectionFile } = require("../utils/converter/model_converter/dbConnection");
+const { generatePackage } = require("../utils/converter/packageJson/package");
+
+
 const { generatePostManFile } = require("../utils/postman/builder");
 const { getRoutes } = require("../utils/postman/getRoute");
 const info = require("../utils/postman/info");
@@ -22,8 +25,11 @@ async function upScale(vscode) {
         await convertAllModels(res,vscode);
         await convertAllController(res,vscode);
         await convertAllRoutes(res,vscode);
+        await generatePackage(res,vscode);
+    
+    
         vscode.window.showInformationMessage(`Successfully Done`);
-    })
+    });
 
 }
 

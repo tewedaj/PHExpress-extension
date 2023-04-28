@@ -30,11 +30,9 @@ function getBy(modelName,model){
      
      public function getBy${paramName}(){
         $response = $this->getTableWhen(" ${variable.name} = '".$this->request["params"]["${paramName}"]."' " ,"${modelName}");
-        // if(is_object($response)){
+        
             $this->response->send(200,$response);
-        // }else {
-        //     $this->response->send(400,'{"success": false, "message": "Something Went Wrong"}');
-        // }
+        
     }
     
     `;

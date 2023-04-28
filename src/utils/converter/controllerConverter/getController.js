@@ -2,7 +2,7 @@
 //get 
 function get(modelName){
     var response = `
-async function get${modelName}(){
+export async function get${modelName}(){
         return new Promise((resolve,reject) =>{
             ${modelName}.findAll().then((res)=>{
                resolve(res);
@@ -26,7 +26,7 @@ function getBy(modelName,model){
 
      response = response + `
      
-     async function getBy${paramName}(${paramName}_value){
+     export async function getBy${paramName}(${paramName}_value){
       ${modelName}.findAll({
             where: {
               ${paramName}: ${paramName}_value
