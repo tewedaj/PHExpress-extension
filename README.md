@@ -1,8 +1,29 @@
-# phexpress README
+# PHExpress Extension
+<img width="100%"  src="./assets/banner.png"/>
 
-This is the README for your extension "phexpress". After writing up a brief description, we recommend including the following sections.
-
+## PHExpress (Powered By PHP)
 ## Features
+
+### Create Crud opreations and controllers from a single model
+     ```PHP
+     <?php 
+        include "./User.php";
+        class TestModel2{
+            private int $id;
+            //size: 11
+            private string $user_name;
+            //size: 254
+            private string $pass_word;
+            //size: 254
+            private User $user_id;
+            //size: 11
+    }
+     
+     ```
+* The above is an example of what a model looks like in PHExpress 
+* We need the size comment inorder to create database table accordingly 
+* now press on ``` Ctrl + p ``` and then search for ```PHExpress: CRUD```  to create all the controllers and RestFull interface for CRUD operations on the model
+
 
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
@@ -11,29 +32,6 @@ For example if there is an image subfolder under your extension project workspac
 \!\[feature X\]\(images/feature-x.png\)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
@@ -57,9 +55,5 @@ You can author your README using Visual Studio Code.  Here are some useful edito
 * Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
 * Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
 
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**

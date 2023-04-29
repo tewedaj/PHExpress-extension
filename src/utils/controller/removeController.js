@@ -9,7 +9,6 @@ function removeBy(modelName, model) {
     response = response + `
         public function removeBy${paramName}(){
             $deleteResult = $this->deleteTable(" ${variable.name} = ". $this->request["params"]["${paramName}"] ,"${modelName}");
-          
                 $this->response->send(200, '{"success": true}');
           
         }

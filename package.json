@@ -3,6 +3,8 @@
   "displayName": "PHExpress",
   "description": "IDE support for PHExpress ",
   "version": "0.0.1",
+  "publisher": "Tewedajgetahun",
+  "repository": "https://github.com/tewedaj/PHExpress-extension",
   "engines": {
     "vscode": "^1.77.0"
   },
