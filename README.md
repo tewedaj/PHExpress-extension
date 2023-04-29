@@ -5,7 +5,7 @@
 ## Features
 
 ### Create Crud opreations and controllers from a single model
-     ```PHP
+     ```PHP 
      <?php 
         include "./User.php";
         class TestModel2{
