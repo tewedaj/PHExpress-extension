@@ -1,5 +1,5 @@
 # PHExpress Extension
-<img width="100%"  src="./assets/banner2.png"/>
+<img width="100%"  src="./assets/banner.png"/>
 
 ## PHExpress (Powered By PHP)
 ## Features
