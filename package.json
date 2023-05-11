@@ -2,7 +2,7 @@
   "name": "phexpress",
   "displayName": "PHExpress",
   "description": "IDE support for PHExpress ",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "icon": "./assets/profile.png",
   "publisher": "Tewedajgetahun",
   "repository": "https://github.com/tewedaj/PHExpress-extension",
